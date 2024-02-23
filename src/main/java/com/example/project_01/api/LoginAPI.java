@@ -43,7 +43,7 @@ public class LoginAPI {
 
     @GetMapping("/search")
     public String get(){
-        System.out.println("OK");
+        System.out.println("OK-  ADMIN, MANAGER only WELLCOME");
         return "OK";
     }
 
