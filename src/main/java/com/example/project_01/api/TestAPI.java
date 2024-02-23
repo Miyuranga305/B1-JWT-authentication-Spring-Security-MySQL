@@ -11,7 +11,7 @@ public class TestAPI {
 
     @GetMapping
     public String get(){
-        return "OK";
+        return "ADMIN, USER, MANAGER - ALL are WELLCOME";
     }
 
 }
