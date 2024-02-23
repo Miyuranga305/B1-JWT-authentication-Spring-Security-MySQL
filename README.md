@@ -12,3 +12,13 @@ Fine-tune Access Controls: Utilize Spring Security's configuration to define rol
 Tool Integration for Development: Utilize IntelliJ IDEA for efficient development and debugging, and Postman for testing API endpoints and JWT token validation.
 
 Additional Security Layers: Enhance security with HTTPS to encrypt communication, CSRF protection to prevent cross-site request forgery attacks, and rate limiting to mitigate against brute-force and DoS attacks.
+
+
+1. **JWT Token Generation**: Users authenticate using their username and password stored in MySQL. Upon successful authentication, a JWT token is generated.
+
+2. **Role-based Access**: There are three roles: ADMIN, MANAGER, and USER. 
+   - ADMIN and MANAGER roles have access to endpoints `/log` and `/search`.
+   - USER role is limited to accessing only `/log`.
+
+3. **MySQL Integration**: User credentials are stored in a MySQL database, ensuring secure storage and retrieval during authentication.
+
